@@ -1,19 +1,11 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PauseManager : MonoBehaviour
 {
-    private Keyboard _keyboard;
-
-    private void Start()
-    {
-        _keyboard = Keyboard.current;
-    }
-
     private void Update()
     {
-        if(_keyboard.wasUpdatedThisFrame)
+        if(Input.GetKeyDown(KeyCode.Escape))
             SwitchPauseGame();
     }
 
