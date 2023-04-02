@@ -5,31 +5,19 @@ namespace Entities.Player
 {
     public class PlayerMovement : MonoBehaviour
     {
-<<<<<<< Updated upstream
         public Vector2 movement;
         public int speed = 5;
-=======
-        private Vector2 movement;
-        private int speed = 5;
-        [SerializeField]
-        private Animator Animator;
->>>>>>> Stashed changes
+        
+        [SerializeField] private Animator Animator;
         
         void Update()
         {
-            Move();
+            //Move();
         }
 
-<<<<<<< Updated upstream
-        private void Move()
-=======
-        private void Update()
-        {
-            Animacoes();
-        }
+        //private void Move();
 
         void FixedUpdate()
->>>>>>> Stashed changes
         {
             transform.position += new Vector3(movement.x, movement.y, 0) * Time.deltaTime * speed;
         }
@@ -42,15 +30,15 @@ namespace Entities.Player
 
         public void Animacoes()
         {
-            Animator.SetFloat("X", movement.x);
-            Animator.SetFloat("Y", movement.y);
-            Animator.SetFloat("Speed", movement.sqrMagnitude);
+            //Animator.SetFloat("X", movement.x);
+            //Animator.SetFloat("Y", movement.y);
+            //Animator.SetFloat("Speed", movement.sqrMagnitude);
 
-            if (movement != Vector2.zero)
-            {
-                Animator.SetFloat("HorizontalIdle", movement.x);
-                Animator.SetFloat("VerticalIdle", movement.y);
-            }
+            //if (movement != Vector2.zero)
+            //{
+            //    Animator.SetFloat("HorizontalIdle", movement.x);
+            //    Animator.SetFloat("VerticalIdle", movement.y);
+            //}
         }
     }
 }
