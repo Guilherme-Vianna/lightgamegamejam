@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,7 @@ namespace Entities.Player
         private Vector2 movement;
         private int speed = 5;
         private Animator Animator;
-        
+
         private void Update()
         {
             Animacoes();
@@ -18,13 +19,13 @@ namespace Entities.Player
         {
             transform.position += new Vector3(movement.x, movement.y, 0) * Time.deltaTime * speed;
         }
+        
 
         public void SetMovement(InputAction.CallbackContext value)
         {
             movement = value.ReadValue<Vector2>();
         }
-
-
+        
         public void Animacoes()
         {
             Animator.SetFloat("X", movement.x);
