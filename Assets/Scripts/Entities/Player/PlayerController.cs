@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,8 +10,6 @@ public class PlayerController : MonoBehaviour
         if (value.performed)
         {
             _interact = true;
-            //print(_interact);
-            print("Space");
         }
     }
 
