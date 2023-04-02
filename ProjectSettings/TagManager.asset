@@ -6,14 +6,15 @@ TagManager:
   tags:
   - Enemy
   - Keys
+  - Collectable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CameraLayer
   - Water
   - UI
-  - 
+  - Entities
   - 
   - 
   - 
@@ -42,4 +43,11 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+<<<<<<< Updated upstream
+    uniqueID: 3589257643
+=======
+    uniqueID: 3050344489
+>>>>>>> Stashed changes
     locked: 0
