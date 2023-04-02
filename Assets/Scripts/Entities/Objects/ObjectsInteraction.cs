@@ -23,6 +23,7 @@ namespace Entities.Objects
         {
             if (_pc.GetInteraction())
             {
+                print("rotina");
                 ObjectAction();
                 _pc.SetInteractionEnd(false);
             }
@@ -40,7 +41,8 @@ namespace Entities.Objects
 
         private void ObjectAction()
         {
-            if (name == "Keys")
+            print(_className);
+            if (_className == "Keys")
             {
                 print("Action");
                 _obj.GetComponent<Keys>().Action();
