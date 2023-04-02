@@ -50,7 +50,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""AWSD Keybord"",
                     ""id"": ""9fb3e83f-3e4d-4710-8c45-0b7f79e42efe"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=1)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
