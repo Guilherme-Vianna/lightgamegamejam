@@ -7,22 +7,23 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public Slider Battery;
+    public Image Battery;
     public TextMeshProUGUI GameOverTxt;
     public GameObject Restart;
+    public float Scale;
 
     private void Start()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         GameOverTxt.enabled = false;
         Restart.SetActive(false);
     }
 
     private void Update()
     {
-        Battery.value -= Time.deltaTime;
+        Battery.fillAmount -= Time.deltaTime / Scale;
 
-        if (Battery.value <= 0)
+        if (Battery.fillAmount <= 0.2f)
             GameOver();
     }
 
@@ -37,6 +38,5 @@ public class GameOverManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(3);
-        //print("Restart");
     }
 }
