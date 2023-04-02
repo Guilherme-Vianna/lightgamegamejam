@@ -20,8 +20,11 @@ namespace Entities.Enemy
             var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
             agent.updateRotation = false;
             agent.updateUpAxis = false;
-            agent.speed = 500f;
-            agent.acceleration = 50f;
+            //agent.speed = 500f;
+            agent.speed = 50f;
+            
+            //agent.acceleration = 50f;
+            agent.acceleration = 10f;
         }
 
         private void Update()

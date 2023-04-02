@@ -8,7 +8,7 @@ namespace Entities.Player
     {
         private Vector2 movement;
         private int speed = 5;
-        public  Animator Animator;
+        public Animator Animator;
 
         private void Update()
         {
