@@ -9,13 +9,16 @@ namespace Entities.Objects
     {
         [SerializeField] private GameObject _prefab;
 
+        [SerializeField] private GameObject _obj;
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
                 Debug.Log("Chave");
                 Instantiate(_prefab, transform.position, Quaternion.identity);
-                _prefab.GetComponent<ObjectsInteraction>().SetGameObject(gameObject);
+                _prefab.GetComponent<ObjectsInteraction>().SetGameObject(_obj);
+                _prefab.GetComponent<ObjectsInteraction>().SetObjectClass("Keys");
             }
         }
 

@@ -9,9 +9,12 @@ public class PlayerController : MonoBehaviour
 
     public void SetInteraction(InputAction.CallbackContext value)
     {
-        _interact = value.ReadValue<bool>();
-        //print(_interact);
-        print("Space");
+        if (value.performed)
+        {
+            _interact = true;
+            //print(_interact);
+            print("Space");
+        }
     }
 
     public void SetInteractionEnd(bool value)
