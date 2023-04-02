@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Entities.Enemy
@@ -8,10 +9,17 @@ namespace Entities.Enemy
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (!other.gameObject.CompareTag("Light"))
+            if (other.gameObject.CompareTag("Light"))
             {
-                IsInLight = false;
+                Debug.Log("Dentro da Luz");
+                IsInLight = true;
             }
+        }
+
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            Debug.Log("Fora da Luz");
+            IsInLight = false;
         }
     }
 }
