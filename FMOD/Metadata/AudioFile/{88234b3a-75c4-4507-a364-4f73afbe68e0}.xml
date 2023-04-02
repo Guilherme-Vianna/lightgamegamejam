@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{88234b3a-75c4-4507-a364-4f73afbe68e0}">
+		<property name="assetPath">
+			<value>Footsteep4.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.355328798185941</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{de857086-d20f-4736-89c0-a96e9df4fa5c}</destination>
+		</relationship>
+	</object>
+</objects>
