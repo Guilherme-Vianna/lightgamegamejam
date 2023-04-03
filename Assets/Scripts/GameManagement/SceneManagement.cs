@@ -4,19 +4,14 @@ namespace GameManagement
 {
     public class SceneManagement : MonoBehaviour
     {
-        public static void LoadMainMenu()
+        public static void LoadScene(int index)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(index);
         }
         
-        public static void LoadMainScene()
+        public static void Exit()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
-        }
-        
-        public static void LoadCreditScene()
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("CreditScene");
+            Application.Quit();
         }
     }
 }
