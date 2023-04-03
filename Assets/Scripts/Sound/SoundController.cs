@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class SoundController : MonoBehaviour
 {
-    [Range(0, 2)]
-    public int danger;
     FMODUnity.StudioEventEmitter emitter;
-    // Start is called before the first frame update
+
     void Start()
     {
         var target = GetComponent<FMODUnity.StudioEventEmitter>();
         emitter = target.GetComponent<FMODUnity.StudioEventEmitter>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        emitter.SetParameter("Danger", danger);
     }
 
     public void DoStep()

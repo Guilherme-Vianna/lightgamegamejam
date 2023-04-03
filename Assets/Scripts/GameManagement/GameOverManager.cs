@@ -12,8 +12,11 @@ public class GameOverManager : MonoBehaviour
     public GameObject Restart;
     public float Scale;
 
+    public SoundController soundControl;
+
     private void Start()
     {
+        soundControl = GameObject.FindAnyObjectByType<SoundController>();
         Time.timeScale = 1;
         GameOverTxt.enabled = false;
         Restart.SetActive(false);
@@ -23,6 +26,12 @@ public class GameOverManager : MonoBehaviour
     {
         Battery.fillAmount -= Time.deltaTime / Scale;
 
+        if (Battery.fillAmount <= 0.8f)
+            soundControl.SetDanger(1);
+        if (Battery.fillAmount <= 0.5f)
+            soundControl.SetDanger(2);
+        else
+            soundControl.SetDanger(0);
         if (Battery.fillAmount <= 0.2f)
             GameOver();
     }
