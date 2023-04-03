@@ -46,28 +46,6 @@ namespace Entities.Player
                 Animator.SetFloat("VerticalIdle", movement.y);
             }
         }
-    
-    
-        //public void rotateLanternDown()
-        //{
-        //    Lantern.RotateDown();
-        //}
-
-
-        //public void rotateLanternUp()
-        //{
-        //    Lantern.RotateUp();
-        //}
-
-        //public void rotateLanternLeft()
-        //{
-        //    Lantern.RotateLeft();
-        //}
-
-        //public void rotateLanternRight()
-        //{
-        //    Lantern.RotateRight();
-        //}
     }
 
 }

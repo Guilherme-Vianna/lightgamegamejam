@@ -15,12 +15,17 @@ namespace Entities.Enemy
         public bool IsReadyToChase;
         public float ChaseRefreshTime;
         public float ChaseCounter;
+        public bool CanChase;
+
+        public int SoundChaseCount;
+        public bool DidTheSound;
 
          NavMeshAgent Agent;
 
         private void Start()
         {
             Agent = GetComponent<NavMeshAgent>();
+
             LightDetector = FindObjectOfType<LightDetector>();
 
             Agent.updateRotation = false;
@@ -32,41 +37,71 @@ namespace Entities.Enemy
 
         private void Update()
         {
-            if (LightDetector.IsInLight)
+            if (CanChase)
             {
-                ChaseCounter = 0;
-                IsReadyToChase = false;
-            }
-            else
-            {
-                ChaseCounter += Time.deltaTime;
-            }            
+                if (LightDetector.IsInLight)
+                {
+                    ChaseCounter = 0;
+                    IsReadyToChase = false;
+                }
+                else
+                {
+                    ChaseCounter += Time.deltaTime;
+                }
 
-            if (!LightDetector.IsInLight && IsReadyToChase)
-            {
-                StartCoroutine("Chase");
-            }
+                if (!LightDetector.IsInLight && IsReadyToChase)
+                {
+                    StartCoroutine("Chase");
+                }
 
 
-            if (ChaseCounter > ChaseRefreshTime)
-            {
-                IsReadyToChase = true;
-            }
-            else
-            {
-                IsReadyToChase = false;
+                if (ChaseCounter > ChaseRefreshTime)
+                {
+                    IsReadyToChase = true;
+                }
+                else
+                {
+                    IsReadyToChase = false;
+                }
             }
 
-            
         }
 
         private IEnumerator Chase()
         {
-            soundControl.EnemySlide();
+            if (!DidTheSound)
+            {
+                soundControl.EnemySlide();
+
+                DidTheSound = true;
+            }
+                     
             Agent.destination = destination.position;
             yield return new WaitForSecondsRealtime(0.3f);
             Agent.destination = transform.position;
             ChaseCounter = 0;
+            DidTheSound = false;
+        }
+
+        private void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                CanChase = true;
+            }
+        }
+
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                CanChase = false;
+            }
         }
     }
+
+
+
+
 }
