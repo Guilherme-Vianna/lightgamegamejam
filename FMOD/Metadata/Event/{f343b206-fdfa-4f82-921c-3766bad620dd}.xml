@@ -72,9 +72,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{5c0992af-bc49-4630-ac5d-e39da0079b76}">
-		<property name="volume">
-			<value>-3.5</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{cc6c3f8a-51bf-4ed7-b849-1d67b7747c5e}</destination>
 		</relationship>
@@ -93,10 +90,10 @@
 	<object class="MixerBusPanner" id="{dfb8edb4-7ec0-4c85-bbf7-b844f2f973e0}" />
 	<object class="SingleSound" id="{4e8be079-6933-44d9-a32c-d5498e2649d1}">
 		<property name="length">
-			<value>6.4611746757816446</value>
+			<value>4.5611746757816505</value>
 		</property>
 		<property name="timelockedOffset">
-			<value>0.62195457591903758</value>
+			<value>2.5219545759190378</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{ccdbcb9d-977e-4833-8db3-98f705c73b3f}</destination>
@@ -107,7 +104,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{aa90609f-6c8e-4180-9e2c-19fcc8a513ca}">
 		<property name="volume">
-			<value>-6.5</value>
+			<value>-12</value>
 		</property>
 		<property name="name">
 			<value>Death Trombone</value>
@@ -157,7 +154,7 @@
 	</object>
 	<object class="AutomationPoint" id="{2aa5bddd-b664-46dd-8590-9bb59713e185}">
 		<property name="position">
-			<value>6.4611746757816446</value>
+			<value>4.5611746757816505</value>
 		</property>
 		<property name="value">
 			<value>0</value>
