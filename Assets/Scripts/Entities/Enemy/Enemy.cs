@@ -6,6 +6,7 @@ namespace Entities.Enemy
 {
     public class Enemy : MonoBehaviour
     {
+        public SoundController soundControl;
         public Transform destination;
         public GameObject lightDetector;
 
@@ -24,11 +25,8 @@ namespace Entities.Enemy
 
             Agent.updateRotation = false;
             Agent.updateUpAxis = false;
-            //agent.speed = 500f;
-            //agent.acceleration = 50f;
 
-            //Agent.speed = 5f;            
-            //Agent.acceleration = 30f;
+            soundControl = GameObject.FindAnyObjectByType<SoundController>();
         }
 
 
@@ -64,7 +62,7 @@ namespace Entities.Enemy
 
         private IEnumerator Chase()
         {
-            
+            soundControl.EnemySlide();
             Agent.destination = destination.position;
             yield return new WaitForSecondsRealtime(0.3f);
             Agent.destination = transform.position;

@@ -16,6 +16,4 @@ public class PlayerSoundController : MonoBehaviour
     {
         soundController.DoStep();
     }
-
-
 }
