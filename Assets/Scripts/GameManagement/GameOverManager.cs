@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public Image Battery;
-    public GameObject GameOverScreen;
+    public TextMeshProUGUI GameOverTxt;
+    public GameObject Restart;
     public float Scale;
 
     public SoundController soundControl;
@@ -17,7 +18,8 @@ public class GameOverManager : MonoBehaviour
     {
         soundControl = GameObject.FindAnyObjectByType<SoundController>();
         Time.timeScale = 1;
-        GameOverScreen.SetActive(false);
+        GameOverTxt.enabled = false;
+        Restart.SetActive(false);
     }
 
     private void Update()
@@ -34,10 +36,11 @@ public class GameOverManager : MonoBehaviour
             GameOver();
     }
 
-    public void GameOver()
+    private void GameOver()
     {
         Battery.gameObject.SetActive(false);
-        GameOverScreen.SetActive(true);
+        GameOverTxt.enabled = true;
+        Restart.SetActive(true);
         Time.timeScale = 0;
     }
 

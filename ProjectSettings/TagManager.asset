@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Light
   - Keys
-  - Estatua
   layers:
   - Default
   - TransparentFX
@@ -46,12 +45,6 @@ TagManager:
     locked: 0
   - name: Cenario
     uniqueID: 2247622753
-    locked: 0
-  - name: Dino
-    uniqueID: 1223631347
-    locked: 0
-  - name: Player
-    uniqueID: 2920468159
     locked: 0
   - name: Enemy
     uniqueID: 212709111
