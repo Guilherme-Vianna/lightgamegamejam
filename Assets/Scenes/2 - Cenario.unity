@@ -21732,7 +21732,7 @@ MonoBehaviour:
   Battery: {fileID: 297541078}
   GameOverTxt: {fileID: 926140451}
   Restart: {fileID: 144209273}
-  Scale: 50
+  Scale: 100
   soundControl: {fileID: 0}
 --- !u!114 &2008687213
 MonoBehaviour:
