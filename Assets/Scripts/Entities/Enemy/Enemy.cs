@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Codice.Client.BaseCommands;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Entities.Enemy
 {
@@ -10,31 +9,46 @@ namespace Entities.Enemy
         public Transform destination;
         public GameObject lightDetector;
 
+        LightDetector LightDetector;
+
         public bool IsReadyToChase;
         public float ChaseRefreshTime;
-        public float ChaseTimeDuration;
         public float ChaseCounter;
-        
+
+         NavMeshAgent Agent;
+
         private void Start()
         {
-            var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-            agent.updateRotation = false;
-            agent.updateUpAxis = false;
+            Agent = GetComponent<NavMeshAgent>();
+            LightDetector = FindObjectOfType<LightDetector>();
+
+            Agent.updateRotation = false;
+            Agent.updateUpAxis = false;
             //agent.speed = 500f;
-            agent.speed = 50f;
-            
             //agent.acceleration = 50f;
-            agent.acceleration = 10f;
+
+            //Agent.speed = 5f;            
+            //Agent.acceleration = 30f;
         }
+
 
         private void Update()
         {
-            var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (LightDetector.IsInLight)
+            {
+                ChaseCounter = 0;
+                IsReadyToChase = false;
+            }
+            else
+            {
+                ChaseCounter += Time.deltaTime;
+            }            
 
-            if (!lightDetector.GetComponent<LightDetector>().IsInLight && IsReadyToChase)
+            if (!LightDetector.IsInLight && IsReadyToChase)
             {
                 StartCoroutine("Chase");
             }
+
 
             if (ChaseCounter > ChaseRefreshTime)
             {
@@ -45,15 +59,15 @@ namespace Entities.Enemy
                 IsReadyToChase = false;
             }
 
-            ChaseCounter += Time.deltaTime;
+            
         }
 
         private IEnumerator Chase()
         {
-            var agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-            agent.destination = destination.position;
+            
+            Agent.destination = destination.position;
             yield return new WaitForSecondsRealtime(0.3f);
-            agent.destination = transform.position;
+            Agent.destination = transform.position;
             ChaseCounter = 0;
         }
     }

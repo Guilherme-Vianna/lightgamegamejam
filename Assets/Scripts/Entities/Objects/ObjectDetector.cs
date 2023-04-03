@@ -9,6 +9,7 @@ namespace Entities.Objects
     {
         public ObjectsInteraction _object;
         public TMP_Text _text; 
+
         public void OnTriggerStay2D(Collider2D other)
         {
             if (other.gameObject.CompareTag("Collectable"))

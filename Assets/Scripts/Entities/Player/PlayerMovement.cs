@@ -7,8 +7,16 @@ namespace Entities.Player
     public class PlayerMovement : MonoBehaviour
     {
         private Vector2 movement;
-        private int speed = 5;
+        [SerializeField]
+        private int speed;
         public Animator Animator;
+
+        PlayerLantern Lantern;
+
+        private void Awake()
+        {
+            Lantern = FindObjectOfType<PlayerLantern>();
+        }
 
         private void Update()
         {
@@ -38,5 +46,28 @@ namespace Entities.Player
                 Animator.SetFloat("VerticalIdle", movement.y);
             }
         }
+    
+    
+        //public void rotateLanternDown()
+        //{
+        //    Lantern.RotateDown();
+        //}
+
+
+        //public void rotateLanternUp()
+        //{
+        //    Lantern.RotateUp();
+        //}
+
+        //public void rotateLanternLeft()
+        //{
+        //    Lantern.RotateLeft();
+        //}
+
+        //public void rotateLanternRight()
+        //{
+        //    Lantern.RotateRight();
+        //}
     }
+
 }

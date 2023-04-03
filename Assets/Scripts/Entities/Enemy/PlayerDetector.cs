@@ -7,14 +7,8 @@ namespace Entities.Enemy
 {
     public class PlayerDetector : MonoBehaviour
     {
-        //public bool IsReadyToWalk;
         public float TimeRefreshWalk;
         public int TimeToWalk;
-
-        // private void Start()
-        // {
-        //     GetComponentInParent<NavMeshAgent>().speed = 0;
-        // }
 
         private void OnTriggerStay2D(Collider2D other)
         {
