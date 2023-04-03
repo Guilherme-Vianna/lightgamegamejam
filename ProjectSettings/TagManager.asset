@@ -46,6 +46,12 @@ TagManager:
   - name: Cenario
     uniqueID: 2247622753
     locked: 0
+  - name: Dino
+    uniqueID: 1910381449
+    locked: 0
+  - name: Player
+    uniqueID: 2240445259
+    locked: 0
   - name: Enemy
     uniqueID: 212709111
     locked: 0
