@@ -9,10 +9,15 @@ namespace GameManagement
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
-        
-        public static void LoadMainScene()
+
+        public static void IntroScene()
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        }
+
+        public static void LoadMainScene()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
         }
         
         public static void LoadCreditScene()
