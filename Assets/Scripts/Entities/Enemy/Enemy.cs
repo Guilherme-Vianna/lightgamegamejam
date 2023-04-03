@@ -72,7 +72,6 @@ namespace Entities.Enemy
             if (!DidTheSound)
             {
                 soundControl.EnemySlide();
-
                 DidTheSound = true;
             }
                      
@@ -90,7 +89,6 @@ namespace Entities.Enemy
                 CanChase = true;
             }
         }
-
 
         private void OnTriggerExit2D(Collider2D collision)
         {
