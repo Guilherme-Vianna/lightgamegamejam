@@ -15,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameOverMng.GameOverNormal();
+            GameOverMng.GameOverEstatua();
         }
     }
 }

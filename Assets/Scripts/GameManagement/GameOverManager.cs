@@ -8,8 +8,14 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public Image Battery;
-    public GameObject GameOverScreen;
+    public GameObject GameOverEst;
+    public GameObject GameOverBat;
     public float Scale;
+
+    public bool tocou;
+
+    public bool Key;
+    public GameObject KeyOBJ;
 
     public SoundController soundControl;
 
@@ -17,11 +23,21 @@ public class GameOverManager : MonoBehaviour
     {
         soundControl = GameObject.FindAnyObjectByType<SoundController>();
         Time.timeScale = 1;
-        GameOverScreen.SetActive(false);
+        GameOverEst.SetActive(false);
+        tocou = false;
     }
 
     private void Update()
     {
+        if (Key)
+        {
+            KeyOBJ.SetActive(true);
+        }
+        else
+        {
+            KeyOBJ.SetActive(false);
+        }
+
         Battery.fillAmount -= Time.deltaTime / Scale;
 
         if (Battery.fillAmount <= 0.8f)
@@ -32,22 +48,27 @@ public class GameOverManager : MonoBehaviour
             soundControl.SetDanger(0);
         if (Battery.fillAmount <= 0.2f)
         {
-            soundControl.Death();
-            StartCoroutine(GameOver());
+            if (!tocou)
+            {
+                soundControl.Death();
+                tocou = true;
+            }
+            GameOverBateria();
         }
     }
 
-    public IEnumerator GameOver()
+    public void GameOverEstatua()
     {
-        yield return new WaitForSecondsRealtime(3);
         Battery.gameObject.SetActive(false);
-        GameOverScreen.SetActive(true);
+        GameOverEst.SetActive(true);
         Time.timeScale = 0;
     }
 
-    public void GameOverNormal()
+    public void GameOverBateria()
     {
-        GameOverScreen.SetActive(true);
+        Battery.gameObject.SetActive(false);
+        GameOverBat.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void RestartGame()
