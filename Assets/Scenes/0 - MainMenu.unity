@@ -392,9 +392,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1718628757}
         m_TargetAssemblyTypeName: GameManagement.SceneManagement, GameManagement
-        m_MethodName: LoadMainScene
+        m_MethodName: LoadCreditScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1718628757}
         m_TargetAssemblyTypeName: GameManagement.SceneManagement, GameManagement
         m_MethodName: LoadMainScene
         m_Mode: 1
@@ -681,6 +681,7 @@ GameObject:
   - component: {fileID: 1718628755}
   - component: {fileID: 1718628754}
   - component: {fileID: 1718628753}
+  - component: {fileID: 1718628757}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -773,6 +774,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1718628757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718628752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8497b112ad63a842a017dbbc7967b22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1732489115
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,9 +869,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1718628757}
         m_TargetAssemblyTypeName: GameManagement.SceneManagement, GameManagement
-        m_MethodName: LoadMainScene
+        m_MethodName: GameExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
