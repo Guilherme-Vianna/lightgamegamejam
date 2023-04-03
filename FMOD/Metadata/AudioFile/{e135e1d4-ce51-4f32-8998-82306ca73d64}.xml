@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e135e1d4-ce51-4f32-8998-82306ca73d64}">
+		<property name="assetPath">
+			<value>Music/End/EndMusic_60_bpm.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>69.028117913832205</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{de857086-d20f-4736-89c0-a96e9df4fa5c}</destination>
+		</relationship>
+	</object>
+</objects>
