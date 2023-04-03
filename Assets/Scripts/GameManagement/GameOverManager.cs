@@ -33,11 +33,15 @@ public class GameOverManager : MonoBehaviour
         else
             soundControl.SetDanger(0);
         if (Battery.fillAmount <= 0.2f)
-            GameOver();
+        {
+            soundControl.Death();
+            StartCoroutine(GameOver());
+        }
     }
 
-    private void GameOver()
+    IEnumerator GameOver()
     {
+        yield return new WaitForSecondsRealtime(3);
         Battery.gameObject.SetActive(false);
         GameOverTxt.enabled = true;
         Restart.SetActive(true);
