@@ -33,7 +33,10 @@ public class GameOverManager : MonoBehaviour
         else
             soundControl.SetDanger(0);
         if (Battery.fillAmount <= 0.2f)
+        {
+            soundControl.Death();
             GameOver();
+        }
     }
 
     private void GameOver()
