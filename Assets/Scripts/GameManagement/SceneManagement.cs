@@ -12,12 +12,12 @@ namespace GameManagement
         
         public static void LoadMainScene()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
         
         public static void LoadCreditScene()
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
 
         public static void GameExit()
