@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a1c8166e-d578-4f97-a8a7-62fad3a10823}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{81792f38-fb18-42e6-9030-c1b3267dc5f1}</destination>
 		</relationship>
@@ -97,9 +100,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1d014072-adaa-48ab-8541-4ac0c9d766d5}">
-		<property name="volume">
-			<value>-7.5</value>
-		</property>
 		<property name="name">
 			<value>UnlockingDoor</value>
 		</property>
