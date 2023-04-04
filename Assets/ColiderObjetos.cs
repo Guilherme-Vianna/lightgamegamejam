@@ -9,13 +9,13 @@ public class ColiderObjetos : MonoBehaviour
 
     private void Awake()
     {
-        GameOverMng = FindObjectOfType<GameOverManager>();
+        //GameOverMng = FindObjectOfType<GameOverManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Key"))
         {
-            GameOverMng.TelaVitoria.SetActive(true);
+            //GameOverMng.TelaVitoria.SetActive(true);
         }
 
         

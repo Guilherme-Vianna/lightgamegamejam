@@ -8,14 +8,14 @@ public class EnemyAttack : MonoBehaviour
 
     void Awake()
     {
-        GameOverMng = FindObjectOfType<GameOverManager>();
+        //GameOverMng = FindObjectOfType<GameOverManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameOverMng.GameOverEstatua();
+            //GameOverMng.GameOverEstatua();
         }
     }
 }

@@ -1,73 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
+using Entities.Objects;
 
 public class GameOverManager : MonoBehaviour
 {
-    public Image Battery;
-    public GameObject GameOverEst;
+    public GameObject batteryOver;
+    //public GameObject GameOverEst;
     public GameObject GameOverBat;
-    public GameObject TelaVitoria;
-    public float Scale;
+    //public GameObject TelaVitoria;
 
-    public bool tocou;
-
-    public bool Key;
-    public GameObject KeyOBJ;
-
-    public SoundController soundControl;
+    //public bool Key;
+    //public GameObject KeyOBJ;
 
     private void Start()
     {
-        soundControl = GameObject.FindAnyObjectByType<SoundController>();
         Time.timeScale = 1;
-        GameOverEst.SetActive(false);
-        tocou = false;
+        //    GameOverEst.SetActive(false);
+        //    tocou = false;
     }
 
     private void Update()
     {
-        if (Key)
+        if (batteryOver.GetComponent<Battery>().death)
         {
-            KeyOBJ.SetActive(true);
+            BatteryGameOver();
         }
-        else
-        {
-            KeyOBJ.SetActive(false);
-        }
+        //    if (Key)
+        //    {
+        //        KeyOBJ.SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        KeyOBJ.SetActive(false);
+        //    }
 
-        Battery.fillAmount -= Time.deltaTime / Scale;
-
-        if (Battery.fillAmount <= 0.8f)
-            soundControl.SetDanger(1);
-        if (Battery.fillAmount <= 0.5f)
-            soundControl.SetDanger(2);
-        else
-            soundControl.SetDanger(0);
-        if (Battery.fillAmount <= 0.2f)
-        {
-            if (!tocou)
-            {
-                soundControl.Death();
-                tocou = true;
-            }
-            GameOverBateria();
-        }
+        //        if (!tocou)
+        //        {
+        //            soundcontrol.death();
+        //            tocou = true;
+        //        }
+        //        GameOverBateria();
+        //    }
     }
 
-    public void GameOverEstatua()
-    {
-        Battery.gameObject.SetActive(false);
-        GameOverEst.SetActive(true);
-        Time.timeScale = 0;
-    }
+    //public void GameOverEstatua()
+    //{
+    //    Battery.gameObject.SetActive(false);
+    //    GameOverEst.SetActive(true);
+    //    Time.timeScale = 0;
+    //}
 
-    public void GameOverBateria()
+    public void BatteryGameOver()
     {
-        Battery.gameObject.SetActive(false);
+        batteryOver.GetComponent<Battery>().flashLightBattery.enabled = false;
         GameOverBat.SetActive(true);
         Time.timeScale = 0;
     }
@@ -76,14 +63,5 @@ public class GameOverManager : MonoBehaviour
     {
         SceneManager.LoadScene(3);
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Battery.fillAmount = 1;
-            Destroy(this.gameObject);
-        }
     }
 }
