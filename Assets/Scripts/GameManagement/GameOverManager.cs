@@ -10,6 +10,7 @@ public class GameOverManager : MonoBehaviour
     public Image Battery;
     public GameObject GameOverEst;
     public GameObject GameOverBat;
+    public GameObject TelaVitoria;
     public float Scale;
 
     public bool tocou;
@@ -74,5 +75,15 @@ public class GameOverManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(3);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Battery.fillAmount = 1;
+            Destroy(this.gameObject);
+        }
     }
 }

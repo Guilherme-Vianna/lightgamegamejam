@@ -46,6 +46,7 @@ namespace Entities.Player
                 Animator.SetFloat("VerticalIdle", movement.y);
             }
         }
+
     }
 
 }

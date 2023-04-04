@@ -27593,7 +27593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.049481057, y: 0.02916782}
   m_AnchorMax: {x: 0.8966862, y: 0.18732873}
-  m_AnchoredPosition: {x: -446, y: 28.499924}
+  m_AnchoredPosition: {x: -446, y: 28.499939}
   m_SizeDelta: {x: -885, y: -64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &616858662
@@ -36003,11 +36003,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -663854405
-      Data2: 1198331699
-      Data3: 27273600
-      Data4: 174960723
-    Path: event:/Music/Gameplay
+      Data1: 714611600
+      Data2: 1265483160
+      Data3: 594398612
+      Data4: 980078817
+    Path: event:/Music/End
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -36015,9 +36015,7 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params:
-  - Name: Danger
-    Value: 0
+  Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColiderObjetos : MonoBehaviour
 {
@@ -14,25 +15,11 @@ public class ColiderObjetos : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Key"))
         {
-            GameOverMng.Key = true;
+            GameOverMng.TelaVitoria.SetActive(true);
         }
 
-        if (collision.gameObject.CompareTag("LockedDoor"))
-        {
-            if (GameOverMng.Key)
-            {
-                //OpenTheDoor
-            }
-            else
-            {
-                //Som de porta fechada
-            }
-        }
+        
 
-        if (collision.gameObject.CompareTag("OpenedDoor"))
-        {
-                //OpenTheDoor
-        }
     }
 
     public void checkDoor()
