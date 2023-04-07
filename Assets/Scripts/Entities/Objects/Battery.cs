@@ -8,7 +8,7 @@ public class Battery : MonoBehaviour
     public SoundController soundControl;
     public bool death;
 
-    public int batteryTimeScale;
+    public float batteryTimeScale;
 
     private void Start()
     {
@@ -17,7 +17,7 @@ public class Battery : MonoBehaviour
 
     private void Update()
     {
-        flashLightBattery.fillAmount -= Time.deltaTime / batteryTimeScale;
+        flashLightBattery.fillAmount -= (Time.deltaTime / batteryTimeScale) * 0.5f;
 
         if (flashLightBattery.fillAmount <= 0.8f)
             soundControl.SetDanger(1);

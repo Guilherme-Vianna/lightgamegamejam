@@ -10,7 +10,7 @@ namespace Entities.Enemy
         public Transform destination;
         public GameObject lightDetector;
 
-        LightDetector LightDetector;
+        public LightDetector LightDetector;
 
         public bool IsReadyToChase;
         public float ChaseRefreshTime;
@@ -26,7 +26,7 @@ namespace Entities.Enemy
         {
             Agent = GetComponent<NavMeshAgent>();
 
-            LightDetector = FindObjectOfType<LightDetector>();
+            LightDetector = GetComponentInChildren<LightDetector>();
 
             Agent.updateRotation = false;
             Agent.updateUpAxis = false;
