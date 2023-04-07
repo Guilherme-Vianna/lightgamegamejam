@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638164729747776030
+  lastModified: 638164797038157492
   FileSizes:
   - Name: Desktop
     Value: 366560
@@ -140,10 +140,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638164729747416029
+  lastModified: 638164797037389541
   FileSizes:
   - Name: Desktop
-    Value: 1606
+    Value: 1644
   Exists: 1
 --- !u!114 &-3539564669086720772
 MonoBehaviour:
@@ -296,10 +296,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638164729747416029
+  lastModified: 638164797037339675
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1156
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -336,12 +336,13 @@ MonoBehaviour:
   - {fileID: 5295916088764556726}
   - {fileID: -8089768833873887508}
   - {fileID: -3539564669086720772}
+  - {fileID: 5845748412182170186}
   EditorParameters: []
   MasterBanks:
   - {fileID: -677572244132758444}
   StringsBanks:
   - {fileID: -3782951033133114300}
-  cacheTime: 638164729747776030
+  cacheTime: 638164797038157492
   cacheVersion: 131603
 --- !u!114 &12832694656230018
 MonoBehaviour:
@@ -439,10 +440,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638164729747776030
+  lastModified: 638164797038037806
   FileSizes:
   - Name: Desktop
-    Value: 7599360
+    Value: 7708608
   Exists: 1
 --- !u!114 &4783105665976921246
 MonoBehaviour:
@@ -525,6 +526,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5845748412182170186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Victory
+  Guid:
+    Data1: 1060884488
+    Data2: 1093991171
+    Data3: -1195114839
+    Data4: 1039498313
+  Banks:
+  - {fileID: 2940819705979692751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
 --- !u!114 &7913721223986815443
 MonoBehaviour:
   m_ObjectHideFlags: 0

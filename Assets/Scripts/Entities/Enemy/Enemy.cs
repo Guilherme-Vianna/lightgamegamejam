@@ -41,6 +41,7 @@ namespace Entities.Enemy
             {
                 if (LightDetector.IsInLight)
                 {
+                    Debug.Log("Ta na luz");
                     ChaseCounter = 0;
                     IsReadyToChase = false;
                 }

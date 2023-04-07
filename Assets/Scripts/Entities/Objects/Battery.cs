@@ -4,10 +4,11 @@ using UnityEngine.UI;
 public class Battery : MonoBehaviour
 {
     public Image flashLightBattery;
-    private int batteryTimeScale = 120;
 
     public SoundController soundControl;
     public bool death;
+
+    public int batteryTimeScale;
 
     private void Start()
     {
