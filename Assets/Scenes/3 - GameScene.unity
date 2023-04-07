@@ -28818,7 +28818,7 @@ Transform:
   m_Children:
   - {fileID: 154650487}
   m_Father: {fileID: 898994156}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &728824653
 SpriteRenderer:
@@ -28859,7 +28859,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2122627509
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 88557d412632cce47803ab57842e574e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -35283,8 +35283,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1189688368}
   - {fileID: 728824652}
+  - {fileID: 1189688368}
   - {fileID: 1617263566}
   - {fileID: 1814375928}
   - {fileID: 1708756340}
@@ -36637,7 +36637,7 @@ Transform:
   m_Children:
   - {fileID: 1016590524}
   m_Father: {fileID: 898994156}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1189688369
 SpriteRenderer:
@@ -36678,7 +36678,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2122627509
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 44ee21ed92d1e5942a68207af012628a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -36719,8 +36719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a093c111267396b4ab2c89089856908e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashLightBattery: {fileID: 0}
-  batteryTimeScale: 40
+  flashLightBattery: {fileID: 297541078}
   soundControl: {fileID: 0}
   death: 0
 --- !u!1 &1219003845
@@ -38046,7 +38045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashLightBattery: {fileID: 297541078}
-  batteryTimeScale: 40
   soundControl: {fileID: 1225679363}
   death: 0
 --- !u!1 &1538150249
@@ -38818,7 +38816,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2122627509
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 44ee21ed92d1e5942a68207af012628a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -38843,8 +38841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a093c111267396b4ab2c89089856908e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashLightBattery: {fileID: 0}
-  batteryTimeScale: 40
+  flashLightBattery: {fileID: 297541078}
   soundControl: {fileID: 0}
   death: 0
 --- !u!1 &1635956709
@@ -38958,9 +38955,9 @@ RectTransform:
   m_Father: {fileID: 2008687216}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 629, y: 264}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -122, y: -96}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690384847
@@ -39084,7 +39081,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708756339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.99, y: -18.59, z: -0.014489384}
+  m_LocalPosition: {x: 6.99, y: -21.09, z: -0.014489384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39147,7 +39144,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2122627509
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 44ee21ed92d1e5942a68207af012628a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -39172,8 +39169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a093c111267396b4ab2c89089856908e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashLightBattery: {fileID: 0}
-  batteryTimeScale: 40
+  flashLightBattery: {fileID: 297541078}
   soundControl: {fileID: 0}
   death: 0
 --- !u!1 &1718581137
@@ -39862,7 +39858,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2122627509
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 44ee21ed92d1e5942a68207af012628a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -39887,8 +39883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a093c111267396b4ab2c89089856908e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashLightBattery: {fileID: 0}
-  batteryTimeScale: 40
+  flashLightBattery: {fileID: 297541078}
   soundControl: {fileID: 0}
   death: 0
 --- !u!1 &1873902994
