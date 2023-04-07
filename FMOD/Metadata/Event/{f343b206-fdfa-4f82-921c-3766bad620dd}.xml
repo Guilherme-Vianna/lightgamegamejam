@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{5c0992af-bc49-4630-ac5d-e39da0079b76}">
+		<property name="volume">
+			<value>6.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{cc6c3f8a-51bf-4ed7-b849-1d67b7747c5e}</destination>
 		</relationship>
@@ -103,9 +106,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{aa90609f-6c8e-4180-9e2c-19fcc8a513ca}">
-		<property name="volume">
-			<value>-12</value>
-		</property>
 		<property name="name">
 			<value>Death Trombone</value>
 		</property>
