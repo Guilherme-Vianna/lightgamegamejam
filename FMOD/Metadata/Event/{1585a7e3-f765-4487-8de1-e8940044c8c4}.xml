@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{09604be7-e509-4f64-93ab-9d485de724f9}">
 		<property name="volume">
-			<value>-4</value>
+			<value>-2.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{54305508-2b95-43c4-a5c6-f73a77b05060}</destination>
@@ -103,6 +103,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{02debc6d-7792-44e6-8b12-fbd32c1fd941}">
+		<property name="volume">
+			<value>-1</value>
+		</property>
 		<property name="name">
 			<value>Footsteeps</value>
 		</property>
