@@ -66,3 +66,5 @@ Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist
 Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist
 Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist
 *.meta
+UserSettings/Layouts/default-2021.dwlt
+UserSettings/EditorUserSettings.asset
