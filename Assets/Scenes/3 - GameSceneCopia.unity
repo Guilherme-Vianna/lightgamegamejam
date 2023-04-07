@@ -270,7 +270,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008687219}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, GameManagement
         m_MethodName: RestartGame
         m_Mode: 1
@@ -37133,7 +37133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008687219}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameOverManager, GameManagement
         m_MethodName: RestartGame
         m_Mode: 1
@@ -46570,12 +46570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   batteryOver: {fileID: 1514443046}
-  GameOverEst: {fileID: 2003989327}
   GameOverBat: {fileID: 717553643}
-  TelaVitoria: {fileID: 734664941}
-  pauseButton: {fileID: 1690384845}
-  Key: 0
-  KeyOBJ: {fileID: 627877202}
 --- !u!1 &2017508968
 GameObject:
   m_ObjectHideFlags: 0
