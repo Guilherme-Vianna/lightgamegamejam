@@ -4,6 +4,6 @@ namespace Entities.Player
 {
     public class PlayerInventory : MonoBehaviour
     {
-        public bool IsOwnKey { get; set; }
+        public bool IsOwnKey; //{ get; set; }
     }
 }

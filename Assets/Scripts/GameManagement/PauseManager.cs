@@ -1,10 +1,9 @@
 using System;
 using UnityEngine;
-using TMPro;
 
 public class PauseManager : MonoBehaviour
 {
-    public TextMeshProUGUI pauseTxt;
+    public GameObject TelaPause;
 
     public void SwitchPauseGame()
     {
@@ -12,11 +11,11 @@ public class PauseManager : MonoBehaviour
         {
             case 0:
                 Time.timeScale = 1;
-                pauseTxt.text = "";
+                TelaPause.SetActive(false);
                 break;
             case 1:
-                Time.timeScale = 0;
-                pauseTxt.text = "Jogo Pausado";
+                Time.timeScale = 0; 
+                TelaPause.SetActive(true);
                 break;
         }
     }
