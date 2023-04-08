@@ -82,4 +82,15 @@ public class SoundController : MonoBehaviour
         emitter.Stop();
         FMODUnity.RuntimeManager.PlayOneShot("event:/Music/Death");
     }
+
+    public void PlaySfxByName(string name,SFXPlayer[] sfxs)
+    {
+        foreach (var sfx in sfxs)
+        {
+            if (sfx.sfxName == name)
+            {
+                sfx.PlaySFX();
+            }
+        }
+    }
 }

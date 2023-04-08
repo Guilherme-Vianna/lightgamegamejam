@@ -6,7 +6,8 @@ namespace Entities.Enemy
 {
     public class Enemy : MonoBehaviour
     {
-        public SoundController soundControl;
+        public SFXPlayer Sfx;
+
         public Transform destination;
         public GameObject lightDetector;
 
@@ -24,6 +25,7 @@ namespace Entities.Enemy
 
         private void Start()
         {
+            
             Agent = GetComponent<NavMeshAgent>();
 
             LightDetector = GetComponentInChildren<LightDetector>();
@@ -31,7 +33,8 @@ namespace Entities.Enemy
             Agent.updateRotation = false;
             Agent.updateUpAxis = false;
 
-            soundControl = GameObject.FindAnyObjectByType<SoundController>();
+            Sfx = GetComponent<SFXPlayer>();
+
         }
 
 
@@ -72,7 +75,7 @@ namespace Entities.Enemy
         {
             if (!DidTheSound)
             {
-                soundControl.EnemySlide();
+                Sfx.PlaySFX();
                 DidTheSound = true;
             }
                      

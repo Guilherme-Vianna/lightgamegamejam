@@ -8,7 +8,9 @@ public class SFXPlayer : MonoBehaviour
     [SerializeField]
     private EventReference sfx;
 
-    public void playSFX()
+    public string sfxName; 
+
+    public void PlaySFX()
     {
         RuntimeManager.PlayOneShotAttached(sfx, gameObject);
     }
