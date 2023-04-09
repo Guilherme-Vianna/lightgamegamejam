@@ -1,24 +1,26 @@
 using Entities.Player;
+using FMODUnity;
 using UnityEngine;
 
 public class Porta : MonoBehaviour
 {
     public bool IsOpenByKey;
 
-    SoundController soundController;
     Animator Anim;
     public GameObject PorraDoCollider;
     BoxCollider2D Box;
 
-    private SFXPlayer[] sfxs;
+    [SerializeField]
+    private EventReference sfxOpeningDoor;
+
+    [SerializeField]
+    private EventReference sfxClosedDoor;
 
     bool IsOpened;
 
     private void Start()
     {
-        soundController = FindObjectOfType<SoundController>();
         Anim = GetComponent<Animator>();
-        sfxs = GetComponents<SFXPlayer>();
         Box = GetComponent<BoxCollider2D>();
     }
 
@@ -30,7 +32,7 @@ public class Porta : MonoBehaviour
         }
         if (other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey && !IsOpened)
         {
-            soundController.PlaySfxByName("PortaAbre", sfxs);
+            RuntimeManager.PlayOneShotAttached(sfxOpeningDoor, gameObject);
             Anim.SetBool("HasKey", true);
             Box.enabled = false;
             Destroy(PorraDoCollider);
@@ -38,11 +40,11 @@ public class Porta : MonoBehaviour
         }
         if (!other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey)
         {
-            soundController.PlaySfxByName("PortaFechada", sfxs);
+            RuntimeManager.PlayOneShotAttached(sfxClosedDoor, gameObject);
         } 
         if (!IsOpenByKey)
         {
-            soundController.PlaySfxByName("PortaAbre", sfxs);
+            RuntimeManager.PlayOneShotAttached(sfxOpeningDoor, gameObject);
             Destroy(gameObject);
         }
         

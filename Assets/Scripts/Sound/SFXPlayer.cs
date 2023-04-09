@@ -10,8 +10,7 @@ public class SFXPlayer : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log(sfx.Guid);
-        Debug.Log(sfx.Path);
+
     }
 
     public string sfxName; 
