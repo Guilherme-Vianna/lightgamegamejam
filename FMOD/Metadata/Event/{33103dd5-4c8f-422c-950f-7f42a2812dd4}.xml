@@ -61,10 +61,10 @@
 			<value>1</value>
 		</property>
 		<property name="minimumDistance">
-			<value>0.800000012</value>
+			<value>1.60000002</value>
 		</property>
 		<property name="maximumDistance">
-			<value>7600</value>
+			<value>500</value>
 		</property>
 		<property name="triggerCooldown">
 			<value>120</value>
@@ -86,7 +86,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{22dc215f-bde2-4f6c-8d68-d1aa9822d43e}">
 		<property name="volume">
-			<value>-4</value>
+			<value>-2.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{b15eeeb8-fbdd-49d5-9af0-63e2d56ffe87}</destination>
@@ -170,7 +170,7 @@
 			<value>1.60000002</value>
 		</property>
 		<property name="maximumDistance">
-			<value>500</value>
+			<value>85</value>
 		</property>
 		<property name="overrideRange">
 			<value>true</value>
@@ -179,7 +179,7 @@
 			<value>1</value>
 		</property>
 		<property name="soundSize">
-			<value>4.80000019</value>
+			<value>4.20000029</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{50a6e763-0892-4b1a-aef0-2d7a5e767e03}" />

@@ -5,7 +5,7 @@ using FMODUnity;
 public class Key : MonoBehaviour
 {
     [SerializeField]
-    private EventReference getKey;
+    private EventReference sfxKey;
 
     GameOverManager UI;
 
@@ -19,8 +19,8 @@ public class Key : MonoBehaviour
         {
             collision.GetComponent<PlayerInventory>().IsOwnKey = true;
             UI.Key = true;
+            RuntimeManager.PlayOneShotAttached(sfxKey, gameObject);
             Destroy(gameObject);
-            RuntimeManager.PlayOneShotAttached(getKey, gameObject);
         }    
     }
 }

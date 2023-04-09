@@ -17834,7 +17834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670726249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.179363, y: -3.7734613, z: -8.858248}
+  m_LocalPosition: {x: 20.181122, y: -3.773469, z: -8.858248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18565,6 +18565,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f791c3102d73d49ae11373085597a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxKey:
+    Guid:
+      Data1: -384302622
+      Data2: 1312717016
+      Data3: 33569672
+      Data4: 30832088
+    Path: event:/Interactables/Keys
 --- !u!1 &734664941
 GameObject:
   m_ObjectHideFlags: 0
@@ -19787,7 +19794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &918269177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20793,7 +20800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1078183592
 Transform:
   m_ObjectHideFlags: 0
@@ -21185,6 +21192,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ce4d0da3c83f45992f472e2e69b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxBattery:
+    Guid:
+      Data1: -2002508600
+      Data2: 1293136129
+      Data3: -636754255
+      Data4: 1332283434
+    Path: event:/Interactables/Battery
 --- !u!1 &1194326111
 GameObject:
   m_ObjectHideFlags: 0
@@ -25972,6 +25986,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ce4d0da3c83f45992f472e2e69b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxBattery:
+    Guid:
+      Data1: -2002508600
+      Data2: 1293136129
+      Data3: -636754255
+      Data4: 1332283434
+    Path: event:/Interactables/Battery
 --- !u!1 &1635956709
 GameObject:
   m_ObjectHideFlags: 0
@@ -26407,6 +26428,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ce4d0da3c83f45992f472e2e69b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxBattery:
+    Guid:
+      Data1: -2002508600
+      Data2: 1293136129
+      Data3: -636754255
+      Data4: 1332283434
+    Path: event:/Interactables/Battery
 --- !u!1 &1718581137
 GameObject:
   m_ObjectHideFlags: 0
@@ -27666,6 +27694,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61ce4d0da3c83f45992f472e2e69b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxBattery:
+    Guid:
+      Data1: -2002508600
+      Data2: 1293136129
+      Data3: -636754255
+      Data4: 1332283434
+    Path: event:/Interactables/Battery
 --- !u!1 &1819884157
 GameObject:
   m_ObjectHideFlags: 0
