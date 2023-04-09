@@ -1,8 +1,12 @@
 using Entities.Player;
 using UnityEngine;
+using FMODUnity;
 
 public class Key : MonoBehaviour
 {
+    [SerializeField]
+    private EventReference getKey;
+
     GameOverManager UI;
 
     private void Awake()
@@ -16,6 +20,7 @@ public class Key : MonoBehaviour
             collision.GetComponent<PlayerInventory>().IsOwnKey = true;
             UI.Key = true;
             Destroy(gameObject);
+            RuntimeManager.PlayOneShotAttached(getKey, gameObject);
         }    
     }
 }
