@@ -56,7 +56,7 @@ public class GameOverManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
 
     }
 }

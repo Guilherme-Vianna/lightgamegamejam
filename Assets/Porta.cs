@@ -6,13 +6,20 @@ public class Porta : MonoBehaviour
     public bool IsOpenByKey;
 
     SoundController soundController;
+    Animator Anim;
+    public GameObject PorraDoCollider;
+    BoxCollider2D Box;
 
     private SFXPlayer[] sfxs;
+
+    bool IsOpened;
 
     private void Start()
     {
         soundController = FindObjectOfType<SoundController>();
-        sfxs = GetComponents<SFXPlayer>();        
+        Anim = GetComponent<Animator>();
+        sfxs = GetComponents<SFXPlayer>();
+        Box = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -21,10 +28,13 @@ public class Porta : MonoBehaviour
         {
             return;
         }
-        if (other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey)
+        if (other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey && !IsOpened)
         {
             soundController.PlaySfxByName("PortaAbre", sfxs);
-            Destroy(gameObject);
+            Anim.SetBool("HasKey", true);
+            Box.enabled = false;
+            Destroy(PorraDoCollider);
+            IsOpened = true;
         }
         if (!other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey)
         {
@@ -37,5 +47,10 @@ public class Porta : MonoBehaviour
         }
         
 
+    }
+
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

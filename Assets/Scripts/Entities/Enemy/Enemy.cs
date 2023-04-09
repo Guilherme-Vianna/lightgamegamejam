@@ -12,6 +12,9 @@ namespace Entities.Enemy
         public GameObject lightDetector;
 
         public LightDetector LightDetector;
+        Animator Anim;
+        SpriteRenderer SptRender;
+        ColiderChase ColChase;
 
         public bool IsReadyToChase;
         public float ChaseRefreshTime;
@@ -23,10 +26,14 @@ namespace Entities.Enemy
 
          NavMeshAgent Agent;
 
+        public bool IsFliped;
+
         private void Start()
         {
             
             Agent = GetComponent<NavMeshAgent>();
+            Anim = GetComponent<Animator>();
+            SptRender = GetComponent<SpriteRenderer>();
 
             LightDetector = GetComponentInChildren<LightDetector>();
 
@@ -34,17 +41,19 @@ namespace Entities.Enemy
             Agent.updateUpAxis = false;
 
             Sfx = GetComponent<SFXPlayer>();
-
+            ColChase = GetComponentInParent<ColiderChase>();
         }
 
+        
 
         private void Update()
         {
+            CanChase = ColChase.CanChase;
+            Flipar();
             if (CanChase)
             {
                 if (LightDetector.IsInLight)
                 {
-                    Debug.Log("Ta na luz");
                     ChaseCounter = 0;
                     IsReadyToChase = false;
                 }
@@ -68,7 +77,8 @@ namespace Entities.Enemy
                     IsReadyToChase = false;
                 }
             }
-
+            Anim.SetBool("CanChase",CanChase);
+            Anim.SetBool("isOnLight", LightDetector.IsInLight);
         }
 
         private IEnumerator Chase()
@@ -78,32 +88,41 @@ namespace Entities.Enemy
                 Sfx.PlaySFX();
                 DidTheSound = true;
             }
-                     
+            Anim.SetBool("Changing", true);
             Agent.destination = destination.position;
             yield return new WaitForSecondsRealtime(0.3f);
             Agent.destination = transform.position;
             ChaseCounter = 0;
             DidTheSound = false;
+
+            Anim.SetBool("Changing", false);
         }
 
-        private void OnTriggerStay2D(Collider2D other)
+        public void Flipar()
         {
-            if (other.gameObject.CompareTag("Player"))
+            if (transform.position.x > destination.position.x) 
             {
-                CanChase = true;
+                if (IsFliped)
+                {
+                    SptRender.flipX = true;
+                }
+                else
+                {
+                    SptRender.flipX = false;
+                }
+            }
+            else
+            {
+                if (IsFliped)
+                {
+                    SptRender.flipX = false;
+                }
+                else
+                {
+                    SptRender.flipX = true;
+                }
             }
         }
-
-        private void OnTriggerExit2D(Collider2D collision)
-        {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                CanChase = false;
-            }
-        }
-    }
-
-
-
+    }  
 
 }

@@ -13,9 +13,9 @@ public class Key : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("O Jogador Pegou a chave");
             collision.GetComponent<PlayerInventory>().IsOwnKey = true;
             UI.Key = true;
+            Destroy(gameObject);
         }    
     }
 }
