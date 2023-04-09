@@ -3,8 +3,17 @@ using UnityEngine;
 
 public class Porta : MonoBehaviour
 {
-    public GameObject TelaVitoria;
     public bool IsOpenByKey;
+
+    SoundController soundController;
+
+    private SFXPlayer[] sfxs;
+
+    private void Start()
+    {
+        soundController = FindObjectOfType<SoundController>();
+        sfxs = GetComponents<SFXPlayer>();        
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,20 +23,16 @@ public class Porta : MonoBehaviour
         }
         if (other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey)
         {
-            //tocar porta abrindo
-            Debug.Log("Tem chave e vai abrir");
+            soundController.PlaySfxByName("PortaAbre", sfxs);
             Destroy(gameObject);
         }
         if (!other.GetComponent<PlayerInventory>().IsOwnKey && IsOpenByKey)
         {
-
-            Debug.Log("nao tem chave");
-            //som porta fechada
+            soundController.PlaySfxByName("PortaFechada", sfxs);
         } 
         if (!IsOpenByKey)
         {
-            Debug.Log("Nao precisa de chave");
-            //som porta abrindo
+            soundController.PlaySfxByName("PortaAbre", sfxs);
             Destroy(gameObject);
         }
         

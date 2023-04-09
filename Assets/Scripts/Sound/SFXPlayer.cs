@@ -13,7 +13,11 @@ public class SFXPlayer : MonoBehaviour
         Debug.Log(sfx.Guid);
         Debug.Log(sfx.Path);
     }
-    public void playSFX()
+
+    public string sfxName; 
+
+    public void PlaySFX()
+
     {
         RuntimeManager.PlayOneShotAttached(sfx, gameObject);
     }
