@@ -5,7 +5,7 @@
 			<value>Slide</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6c7ecf6c-230e-4b50-bfd8-def9cb4ece01}</destination>
@@ -53,12 +53,18 @@
 			<destination>{a23ec49b-7d9f-49d8-a8d8-b1904d2ace77}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{4d86cd51-591f-4cd0-9646-db1e75441233}</destination>
+			<destination>{de986772-549b-480e-a191-7b8705613ebf}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{bb64f07f-6432-4aee-ae5c-980eae9c4e7a}">
 		<property name="maxVoices">
 			<value>1</value>
+		</property>
+		<property name="minimumDistance">
+			<value>0.800000012</value>
+		</property>
+		<property name="maximumDistance">
+			<value>7600</value>
 		</property>
 		<property name="triggerCooldown">
 			<value>120</value>
@@ -79,9 +85,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{22dc215f-bde2-4f6c-8d68-d1aa9822d43e}">
-		<property name="volume">
-			<value>5</value>
-		</property>
 		<relationship name="effectChain">
 			<destination>{b15eeeb8-fbdd-49d5-9af0-63e2d56ffe87}</destination>
 		</relationship>
@@ -126,6 +129,7 @@
 	<object class="MixerBusEffectChain" id="{b15eeeb8-fbdd-49d5-9af0-63e2d56ffe87}">
 		<relationship name="effects">
 			<destination>{4b881913-03af-4516-a017-9ff81894ad16}</destination>
+			<destination>{4022837f-2a52-4d32-abe4-6a64556f4b89}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4278f375-5e55-478a-bd86-bf6ebeb9c27d}" />
@@ -158,6 +162,23 @@
 	</object>
 	<object class="MixerBusPanner" id="{9ada2735-4d09-4614-bb94-521fc73445d4}" />
 	<object class="MixerBusFader" id="{4b881913-03af-4516-a017-9ff81894ad16}" />
+	<object class="SpatialiserEffect" id="{4022837f-2a52-4d32-abe4-6a64556f4b89}">
+		<property name="minimumDistance">
+			<value>1.60000002</value>
+		</property>
+		<property name="maximumDistance">
+			<value>500</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>4.80000019</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{50a6e763-0892-4b1a-aef0-2d7a5e767e03}" />
 	<object class="ThreeEQEffect" id="{0c7777b5-896b-4c1c-a0ca-fde4bbc409eb}">
 		<property name="lowGain">
