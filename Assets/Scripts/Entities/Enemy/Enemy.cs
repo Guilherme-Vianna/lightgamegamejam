@@ -62,13 +62,11 @@ namespace Entities.Enemy
             planes = GeometryUtility.CalculateFrustumPlanes(Cam);
             if (GeometryUtility.TestPlanesAABB(planes, colisor.bounds))
             {
-                Debug.Log(gameObject.name + " has been detected!");
-                Agent.acceleration = AvancoDentroTela;//50;
+                Agent.acceleration = AvancoDentroTela;
             }
             else
             {
-                Agent.acceleration = AvancoForaTela;//170;
-                Debug.Log("Nothing has been detected");
+                Agent.acceleration = AvancoForaTela;
             }
 
             CanChase = ColChase.CanChase;
