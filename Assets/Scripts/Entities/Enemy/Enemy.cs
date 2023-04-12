@@ -31,6 +31,9 @@ namespace Entities.Enemy
 
          NavMeshAgent Agent;
 
+        public int AvancoForaTela;
+        public int AvancoDentroTela;
+
         public bool IsFliped;
 
         private void Start()
@@ -60,11 +63,11 @@ namespace Entities.Enemy
             if (GeometryUtility.TestPlanesAABB(planes, colisor.bounds))
             {
                 Debug.Log(gameObject.name + " has been detected!");
-                Agent.acceleration = 50;
+                Agent.acceleration = AvancoDentroTela;//50;
             }
             else
             {
-                Agent.acceleration = 170;
+                Agent.acceleration = AvancoForaTela;//170;
                 Debug.Log("Nothing has been detected");
             }
 
