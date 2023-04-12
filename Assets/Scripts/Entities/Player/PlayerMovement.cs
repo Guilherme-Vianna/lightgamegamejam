@@ -8,19 +8,15 @@ namespace Entities.Player
     {
         private Vector2 movement;
         [SerializeField]
-        private int speed;
+        private float speed;
         public Animator Animator;
-
-        PlayerLantern Lantern;
-
-        private void Awake()
-        {
-            Lantern = FindObjectOfType<PlayerLantern>();
-        }
 
         private void Update()
         {
-            Animacoes();
+            if (Time.timeScale != 0)
+            {
+                Animacoes();
+            }
         }
 
         void FixedUpdate()

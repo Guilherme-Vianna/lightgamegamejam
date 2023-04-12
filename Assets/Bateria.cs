@@ -18,7 +18,7 @@ public class Bateria : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            BateriaScript.flashLightBattery.fillAmount = 1;
+            BateriaScript.flashLightBattery.fillAmount +=0.5f;
             RuntimeManager.PlayOneShotAttached(sfxBattery, gameObject);
             Destroy(this.gameObject);
         }

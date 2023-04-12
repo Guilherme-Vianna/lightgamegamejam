@@ -24,12 +24,20 @@ namespace Entities.Enemy
         public int SoundChaseCount;
         public bool DidTheSound;
 
+        Plane[] planes;
+        Camera Cam;
+        [SerializeField]
+        Collider2D colisor;
+
          NavMeshAgent Agent;
 
         public bool IsFliped;
 
         private void Start()
         {
+            Cam = Camera.main;
+            
+            colisor = GetComponentInChildren<CapsuleCollider2D>();
             
             Agent = GetComponent<NavMeshAgent>();
             Anim = GetComponent<Animator>();
@@ -48,8 +56,23 @@ namespace Entities.Enemy
 
         private void Update()
         {
+            planes = GeometryUtility.CalculateFrustumPlanes(Cam);
+            if (GeometryUtility.TestPlanesAABB(planes, colisor.bounds))
+            {
+                Debug.Log(gameObject.name + " has been detected!");
+                Agent.acceleration = 50;
+            }
+            else
+            {
+                Agent.acceleration = 170;
+                Debug.Log("Nothing has been detected");
+            }
+
             CanChase = ColChase.CanChase;
             Flipar();
+
+
+
             if (CanChase)
             {
                 if (LightDetector.IsInLight)
