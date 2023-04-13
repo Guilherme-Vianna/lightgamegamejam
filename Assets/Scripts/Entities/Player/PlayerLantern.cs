@@ -20,29 +20,32 @@ namespace Entities.Player
 
         private void Update()
         {
-            if (movement.x > 0)
+            if(Time.timeScale == 1)
             {
-                transform.position = lanternPos2.position;
-                transform.rotation = Quaternion.Euler(0, 0, -90F);
-            }
-            else if (movement.x < 0)
-            {
-                transform.position = lanternPos1.position;
-                transform.rotation = Quaternion.Euler(0, 0, 90F);
-            }
-            else if (movement.y > 0)
-            {
-                transform.position = lanternPos3.position;
-                transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
-            else if (movement.y < 0)
-            {
-                transform.position = lanternPos4.position;
-                transform.rotation = Quaternion.Euler(0, 0, -180F);
-            }
-            else
-            {
-                return;
+                if (movement.x > 0)
+                {
+                    transform.position = lanternPos2.position;
+                    transform.rotation = Quaternion.Euler(0, 0, -90F);
+                }
+                else if (movement.x < 0)
+                {
+                    transform.position = lanternPos1.position;
+                    transform.rotation = Quaternion.Euler(0, 0, 90F);
+                }
+                else if (movement.y > 0)
+                {
+                    transform.position = lanternPos3.position;
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else if (movement.y < 0)
+                {
+                    transform.position = lanternPos4.position;
+                    transform.rotation = Quaternion.Euler(0, 0, -180F);
+                }
+                else
+                {
+                    return;
+                }
             }
         }
     }    
