@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Entities.Objects;
+using FMODUnity;
 
 public class GameOverManager : MonoBehaviour
 {
-    public GameObject batteryOver;
+    Battery battery;
     public GameObject GameOverEst;
     public GameObject GameOverBat;
     public GameObject TelaVitoria;
@@ -16,8 +17,12 @@ public class GameOverManager : MonoBehaviour
     public bool Key;
     public GameObject KeyOBJ;
 
+    [SerializeField]
+    private EventReference sfxDeath;
+
     private void Start()
     {
+        battery = GetComponent<Battery>();
         Time.timeScale = 1;
         GameOverEst.SetActive(false);
     }
@@ -33,7 +38,7 @@ public class GameOverManager : MonoBehaviour
             KeyOBJ.SetActive(false);
         }
 
-        if (batteryOver.GetComponent<Battery>().death)
+        if (battery.death)
         {
             BatteryGameOver();
         }
@@ -41,6 +46,7 @@ public class GameOverManager : MonoBehaviour
 
     public void GameOverEstatua()
     {
+        RuntimeManager.PlayOneShotAttached(sfxDeath, gameObject);
         pauseButton.SetActive(false);
         GameOverEst.SetActive(true);
         Time.timeScale = 0;
@@ -48,7 +54,8 @@ public class GameOverManager : MonoBehaviour
 
     public void BatteryGameOver()
     {
-        batteryOver.GetComponent<Battery>().flashLightBattery.enabled = false;
+        RuntimeManager.PlayOneShotAttached(sfxDeath, gameObject);
+        battery.enabled = false;
         GameOverBat.SetActive(true);
         pauseButton.SetActive(false);
         Time.timeScale = 0;

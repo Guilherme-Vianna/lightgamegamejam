@@ -521,6 +521,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8497b112ad63a842a017dbbc7967b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxClick:
+    Guid:
+      Data1: -508112412
+      Data2: 1100527124
+      Data3: 952613789
+      Data4: 1248186940
+    Path: event:/UI/Click
 --- !u!1 &680479449
 GameObject:
   m_ObjectHideFlags: 0

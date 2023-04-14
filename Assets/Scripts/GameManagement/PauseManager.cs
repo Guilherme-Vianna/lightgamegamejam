@@ -1,10 +1,16 @@
 using System;
 using UnityEngine;
 using UnityEditor;
+using FMODUnity;
+
 public class PauseManager : MonoBehaviour
 {
     public GameObject TelaPause;
     public GameObject SairBotao;
+
+
+    [SerializeField]
+    private EventReference sfxClick;
 
     public void SwitchPauseGame()
     {
@@ -23,11 +29,13 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    public static void GameExit()
+    public /*static*/ void GameExit()
     {
         #if UNITY_EDITOR
+            RuntimeManager.PlayOneShotAttached(sfxClick, gameObject);
             EditorApplication.isPlaying = false;
         #else
+            RuntimeManager.PlayOneShotAttached(sfxClick, gameObject);
             Application.Quit();
         #endif
     }

@@ -750,6 +750,9 @@ MonoBehaviour:
   CanChase: 0
   SoundChaseCount: 0
   DidTheSound: 0
+  colisor: {fileID: 0}
+  AvancoForaTela: 0
+  AvancoDentroTela: 0
   IsFliped: 0
 --- !u!1 &232641144
 GameObject:
@@ -3989,6 +3992,9 @@ MonoBehaviour:
   CanChase: 0
   SoundChaseCount: 0
   DidTheSound: 0
+  colisor: {fileID: 0}
+  AvancoForaTela: 0
+  AvancoDentroTela: 0
   IsFliped: 0
 --- !u!1 &803834458
 GameObject:
@@ -4432,6 +4438,9 @@ MonoBehaviour:
   CanChase: 0
   SoundChaseCount: 0
   DidTheSound: 0
+  colisor: {fileID: 0}
+  AvancoForaTela: 0
+  AvancoDentroTela: 0
   IsFliped: 0
 --- !u!1 &1058582218
 GameObject:
@@ -13289,6 +13298,9 @@ MonoBehaviour:
   CanChase: 0
   SoundChaseCount: 0
   DidTheSound: 0
+  colisor: {fileID: 0}
+  AvancoForaTela: 0
+  AvancoDentroTela: 0
   IsFliped: 0
 --- !u!1 &1506594407
 GameObject:
@@ -14928,6 +14940,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8497b112ad63a842a017dbbc7967b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxClick:
+    Guid:
+      Data1: -508112412
+      Data2: 1100527124
+      Data3: 952613789
+      Data4: 1248186940
+    Path: event:/UI/Click
 --- !u!1 &2100590114
 GameObject:
   m_ObjectHideFlags: 0

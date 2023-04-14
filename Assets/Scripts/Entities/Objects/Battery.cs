@@ -29,7 +29,6 @@ public class Battery : MonoBehaviour
         {
             if (!death)
             {
-                soundControl.Death();
                 death = true;
             }
         }

@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using FMODUnity;
 
 public class IluminaFinalDoJogo : MonoBehaviour
 {
@@ -11,10 +10,15 @@ public class IluminaFinalDoJogo : MonoBehaviour
 
     WinCondition Win;
 
+    [SerializeField]
+    private EventReference sfxWin;
+
+    bool Tocou;
 
     private void Start()
     {
         Win = FindObjectOfType<WinCondition>();
+        Tocou=false;
     }
 
 
@@ -28,6 +32,15 @@ public class IluminaFinalDoJogo : MonoBehaviour
                 foreach (GameObject Luzes in ObjsDesativar)
                 {
                     Luzes.SetActive(false);
+                }
+            }
+
+            if (light2D.intensity >= 0.6f)
+            {
+                if (!Tocou)
+                {
+                    RuntimeManager.PlayOneShotAttached(sfxWin, gameObject);
+                    Tocou = true;
                 }
             }
 
