@@ -22,7 +22,7 @@ public class GameOverManager : MonoBehaviour
 
     private void Start()
     {
-        battery = GetComponent<Battery>();
+        battery = FindObjectOfType<Battery>();
         Time.timeScale = 1;
         GameOverEst.SetActive(false);
     }

@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2861225}
   - component: {fileID: 2861226}
+  - component: {fileID: 2861227}
   m_Layer: 0
   m_Name: image_1
   m_TagString: Untagged
@@ -207,6 +208,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2861227
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2861224}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011169434, y: 0.42099047}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.25, y: 1.25}
+    newSize: {x: 2.25, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1829834, y: 0.40801907}
+  m_EdgeRadius: 0
 --- !u!1 &4945434
 GameObject:
   m_ObjectHideFlags: 0
@@ -18442,8 +18469,9 @@ GameObject:
   m_Component:
   - component: {fileID: 663783201}
   - component: {fileID: 663783202}
+  - component: {fileID: 663783203}
   m_Layer: 0
-  m_Name: Vasos
+  m_Name: Mictorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18516,6 +18544,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &663783203
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663783200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.3108921}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 1.96875}
+    newSize: {x: 4, y: 1.96875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 1.3469658}
+  m_EdgeRadius: 0
 --- !u!1 &670726249
 GameObject:
   m_ObjectHideFlags: 0
@@ -20458,6 +20512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909424516}
   - component: {fileID: 909424517}
+  - component: {fileID: 909424518}
   m_Layer: 0
   m_Name: Pia
   m_TagString: Untagged
@@ -20532,6 +20587,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &909424518
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909424515}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 2.625}
+    newSize: {x: 0.625, y: 2.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.625, y: 2.625}
+  m_EdgeRadius: 0
 --- !u!1 &918269176
 GameObject:
   m_ObjectHideFlags: 0
@@ -21230,6 +21311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1143649255}
   - component: {fileID: 1143649256}
+  - component: {fileID: 1143649257}
   m_Layer: 0
   m_Name: image_0
   m_TagString: Untagged
@@ -21304,6 +21386,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1143649257
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143649254}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.3520341}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4375, y: 1.3125}
+    newSize: {x: 1.4375, y: 1.3125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4375, y: 0.6084318}
+  m_EdgeRadius: 0
 --- !u!1 &1189688367
 GameObject:
   m_ObjectHideFlags: 0
@@ -26808,6 +26916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778863571}
   - component: {fileID: 1778863572}
+  - component: {fileID: 1778863573}
   m_Layer: 0
   m_Name: image_3
   m_TagString: Untagged
@@ -26882,6 +26991,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1778863573
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778863570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0056877136, y: 0.4967308}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.71875, y: 2.15625}
+    newSize: {x: 3.71875, y: 2.15625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.570839, y: 1.0750599}
+  m_EdgeRadius: 0
 --- !u!1 &1780253418
 GameObject:
   m_ObjectHideFlags: 0
@@ -34603,7 +34738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1904538276
 Transform:
   m_ObjectHideFlags: 0

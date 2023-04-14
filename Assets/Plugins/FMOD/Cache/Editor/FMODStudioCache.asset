@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638166624968554257
+  lastModified: 638167345690231486
   FileSizes:
   - Name: Desktop
     Value: 367104
@@ -140,10 +140,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638166520612081278
+  lastModified: 638170238378722318
   FileSizes:
   - Name: Desktop
-    Value: 1782
+    Value: 1826
   Exists: 1
 --- !u!114 &-3539564669086720772
 MonoBehaviour:
@@ -296,7 +296,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638166520612061337
+  lastModified: 638166541900242525
   FileSizes:
   - Name: Desktop
     Value: 1864
@@ -337,12 +337,13 @@ MonoBehaviour:
   - {fileID: -8089768833873887508}
   - {fileID: -3539564669086720772}
   - {fileID: 5845748412182170186}
+  - {fileID: 8409009124106132605}
   EditorParameters: []
   MasterBanks:
   - {fileID: -677572244132758444}
   StringsBanks:
   - {fileID: -3782951033133114300}
-  cacheTime: 638166626245796239
+  cacheTime: 638170238379370590
   cacheVersion: 131603
 --- !u!114 &12832694656230018
 MonoBehaviour:
@@ -440,10 +441,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638166626245796239
+  lastModified: 638170238379370590
   FileSizes:
   - Name: Desktop
-    Value: 7708608
+    Value: 7738592
   Exists: 1
 --- !u!114 &4783105665976921246
 MonoBehaviour:
@@ -607,6 +608,33 @@ MonoBehaviour:
   MinDistance: 1.6
   MaxDistance: 500
   Length: 2000
+--- !u!114 &8409009124106132605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/SplashScreen
+  m_EditorClassIdentifier: 
+  Path: event:/Music/SplashScreen
+  Guid:
+    Data1: 475867970
+    Data2: 1312782862
+    Data3: -1643277148
+    Data4: 1910623636
+  Banks:
+  - {fileID: 2940819705979692751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3910
 --- !u!114 &8560765634833545405
 MonoBehaviour:
   m_ObjectHideFlags: 0
