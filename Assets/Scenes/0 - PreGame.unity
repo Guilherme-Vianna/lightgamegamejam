@@ -161,6 +161,12 @@ MonoBehaviour:
       Data3: -1643277148
       Data4: 1910623636
     Path: event:/Music/SplashScreen
+  CarregouTudo: 0
+  banks:
+  - Master
+  - Master.strings
+  - Music
+  - SFX
 --- !u!95 &308265950
 Animator:
   serializedVersion: 5
