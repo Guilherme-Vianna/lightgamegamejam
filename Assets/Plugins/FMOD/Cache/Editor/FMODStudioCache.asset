@@ -20,7 +20,7 @@ MonoBehaviour:
     Data4: 980078817
   Banks:
   - {fileID: 2940819705979692751}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638171707134585787
+  lastModified: 638171783362852115
   FileSizes:
   - Name: Desktop
     Value: 367392
@@ -246,7 +246,7 @@ MonoBehaviour:
     Data4: 174960723
   Banks:
   - {fileID: 2940819705979692751}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
@@ -343,7 +343,7 @@ MonoBehaviour:
   - {fileID: -677572244132758444}
   StringsBanks:
   - {fileID: -3782951033133114300}
-  cacheTime: 638171707134585787
+  cacheTime: 638171783362852115
   cacheVersion: 131603
 --- !u!114 &12832694656230018
 MonoBehaviour:
@@ -441,10 +441,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638171691493625425
+  lastModified: 638171783361576054
   FileSizes:
   - Name: Desktop
-    Value: 7738592
+    Value: 7738944
   Exists: 1
 --- !u!114 &4783105665976921246
 MonoBehaviour:
@@ -466,7 +466,7 @@ MonoBehaviour:
     Data4: 1382500802
   Banks:
   - {fileID: 2940819705979692751}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
