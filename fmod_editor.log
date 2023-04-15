@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001723CDAC7D8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000022A8E00B398 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,235 +19,26 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005AA050EE38
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8F5A139D0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8F5A13990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8F5A13AB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8F5A13B70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000171EF5B0608
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SplashScreen', format=5, channels=2, frequency=48000, lengthbytes=28992, lengthpcm=187680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.261597.
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000017239F53588, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017239F53588
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017214852570
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Menu', format=5, channels=2, frequency=48000, lengthbytes=626112, lengthpcm=2979400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.156982.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017239F53588
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 346016
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21216
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005AA050EE38
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8F5A139D0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8F5A13990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8F5A13AB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8F5A13B70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000017239325D88
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Flashlight1', format=5, channels=2, frequency=48000, lengthbytes=7104, lengthpcm=80187, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.417389.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 346016
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21216
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005AA050EE38
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8F5A139D0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8F5A13990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8F5A13AB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8F5A13B70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000017239325D88
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Flashlight3', format=5, channels=2, frequency=48000, lengthbytes=7136, lengthpcm=79980, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.466797.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 346016
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21216
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005AA050EE38
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8F5A139D0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8F5A13990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8F5A13AB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8F5A13B70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000017239325D88
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Flashlight4', format=5, channels=2, frequency=48000, lengthbytes=7392, lengthpcm=81972, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.364410.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 346016
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 21216
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000005AA050EE38
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8F5A139D0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8F5A13990
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8F5A13AB0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8F5A13B70
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000017239325D88
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Flashlight2', format=5, channels=2, frequency=48000, lengthbytes=7008, lengthpcm=78284, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290009.
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000017239F52658, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017239F52658
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000172148521B0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3700
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='EndMusic_60_bpm', format=5, channels=2, frequency=48000, lengthbytes=664160, lengthpcm=3313349, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.344727.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017239F52658
-[LOG] SoundI::release                          : Menu (0000017239F53588)
-[LOG] SoundI::release                          :     Menu (0000017239017608)
-[LOG] SoundI::release                          :     Menu (000001721443C468)
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000017238DE5508, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017238DE5508
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000171EECFCA60
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Menu', format=5, channels=2, frequency=48000, lengthbytes=626112, lengthpcm=2979400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.156982.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017238DE5508
-[LOG] SoundI::release                          : EndMusic_60_bpm (0000017239F52658)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (000001723A48D1F8)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (00000172415C23F8)
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000017239F513C8, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000017239F513C8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000017214852CF0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3700
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='EndMusic_60_bpm', format=5, channels=2, frequency=48000, lengthbytes=664160, lengthpcm=3313349, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.344727.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000017239F513C8
-[LOG] SoundI::release                          : Menu (0000017238DE5508)
-[LOG] SoundI::release                          :     Menu (000001723BFD4298)
-[LOG] SoundI::release                          :     Menu (0000017238DE5BC8)
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 000001723D93B5B8, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001723D93B5B8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000172396F4A00
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Menu', format=5, channels=2, frequency=48000, lengthbytes=626112, lengthpcm=2979400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.156982.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001723D93B5B8
-[LOG] SoundI::release                          : EndMusic_60_bpm (0000017239F513C8)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (000001723BFD4778)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (0000017238DE5A18)
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000172148F92A8, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000172148F92A8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001723992E200
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3700
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='EndMusic_60_bpm', format=5, channels=2, frequency=48000, lengthbytes=664160, lengthpcm=3313349, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.344727.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000172148F92A8
-[LOG] SoundI::release                          : Menu (000001723D93B5B8)
-[LOG] SoundI::release                          :     Menu (000001723DE6DB58)
-[LOG] SoundI::release                          :     Menu (00000172148F8D98)
-[LOG] SystemI::createSound                     : filename = FMOD/Build/Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 00000172415C0AA8, queue head = 000001723DD006E8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000172415C0AA8
-[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Build/Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7717664
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000171BDAC69F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 3000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Menu', format=5, channels=2, frequency=48000, lengthbytes=626112, lengthpcm=2979400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.156982.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000172415C0AA8
-[LOG] SoundI::release                          : EndMusic_60_bpm (00000172148F92A8)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (000001723DE6DCF8)
-[LOG] SoundI::release                          :     EndMusic_60_bpm (00000172148F8888)
-[LOG] SoundI::release                          : Menu (00000172415C0AA8)
-[LOG] SoundI::release                          :     Menu (00000172145FE108)
-[LOG] SoundI::release                          :     Menu (0000017239F53588)
-[LOG] SoundI::release                          :  (000001721461E618)
-[LOG] SoundI::release                          :     SplashScreen (000001723A48EF38)
-[LOG] SoundI::release                          :  (000001723CB6E218)
-[LOG] SoundI::release                          :     Flashlight1 (000001723915BD38)
-[LOG] SoundI::release                          :  (000001723CB6E4F8)
-[LOG] SoundI::release                          :     Flashlight2 (00000171BF3C9E48)
-[LOG] SoundI::release                          :  (000001723CB6DF38)
-[LOG] SoundI::release                          :     Flashlight3 (000001723915C218)
-[LOG] SoundI::release                          :  (000001723CB6E7D8)
-[LOG] SoundI::release                          :     Flashlight4 (000001723915C898)
+[LOG] SoundI::release                          : Menu (0000022A8DAD1F18)
+[LOG] SoundI::release                          :     Menu (0000022A69F90C38)
+[LOG] SoundI::release                          :     Menu (0000022A8DACC248)
+[LOG] SoundI::release                          :  (000002297457CD98)
+[LOG] SoundI::release                          :     SplashScreen (0000022A69F908F8)
+[LOG] SoundI::release                          :  (0000022A3D862AB8)
+[LOG] SoundI::release                          :     Flashlight1 (000002296A83F728)
+[LOG] SoundI::release                          :  (0000022A3D862668)
+[LOG] SoundI::release                          :     Flashlight2 (0000022971285B38)
+[LOG] SoundI::release                          :  (0000022A3D8624F8)
+[LOG] SoundI::release                          :     Flashlight3 (00000229712864F8)
+[LOG] SoundI::release                          :  (0000022A3D8620A8)
+[LOG] SoundI::release                          :     Flashlight4 (0000022971287878)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
