@@ -20,9 +20,9 @@ public class Battery : MonoBehaviour
     {        
         flashLightBattery.fillAmount -= (Time.deltaTime / batteryTimeScale) * 0.5f;
 
-        if (flashLightBattery.fillAmount <= 0.7f)
+        if (flashLightBattery.fillAmount <= 0.85f)
             soundControl.SetDanger(1);
-        if (flashLightBattery.fillAmount <= 0.4f)
+        if (flashLightBattery.fillAmount <= 0.65f)
             soundControl.SetDanger(2);
         else
             soundControl.SetDanger(0);
