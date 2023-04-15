@@ -13,10 +13,15 @@ public class IluminaFinalDoJogo : MonoBehaviour
     [SerializeField]
     private EventReference sfxWin;
 
+
+    SoundController soundController;
+
     bool Tocou;
 
     private void Start()
     {
+        soundController = FindObjectOfType<SoundController>();
+
         Win = FindObjectOfType<WinCondition>();
         Tocou=false;
     }
@@ -39,6 +44,7 @@ public class IluminaFinalDoJogo : MonoBehaviour
             {
                 if (!Tocou)
                 {
+                    soundController.EmitterStop();
                     RuntimeManager.PlayOneShotAttached(sfxWin, gameObject);
                     Tocou = true;
                 }

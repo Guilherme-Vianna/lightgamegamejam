@@ -48,6 +48,9 @@ TagManager:
   - name: Cenario
     uniqueID: 2247622753
     locked: 0
+  - name: Placas
+    uniqueID: 619191367
+    locked: 0
   - name: Player
     uniqueID: 2240445259
     locked: 0

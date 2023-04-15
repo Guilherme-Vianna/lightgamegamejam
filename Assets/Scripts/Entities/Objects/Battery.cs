@@ -10,13 +10,14 @@ public class Battery : MonoBehaviour
 
     public float batteryTimeScale;
 
+
     private void Start()
     {
         soundControl = GameObject.FindAnyObjectByType<SoundController>();
     }
 
     private void Update()
-    {
+    {        
         flashLightBattery.fillAmount -= (Time.deltaTime / batteryTimeScale) * 0.5f;
 
         if (flashLightBattery.fillAmount <= 0.9f)

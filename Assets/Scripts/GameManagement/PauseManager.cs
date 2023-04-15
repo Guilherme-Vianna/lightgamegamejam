@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEditor;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -38,5 +39,12 @@ public class PauseManager : MonoBehaviour
             RuntimeManager.PlayOneShotAttached(sfxClick, gameObject);
             Application.Quit();
         #endif
+    }
+
+
+    public void RestartGame()
+    {
+        RuntimeManager.PlayOneShotAttached(sfxClick, gameObject);
+        SceneManager.LoadScene(4);
     }
 }
