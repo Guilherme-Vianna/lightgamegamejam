@@ -13,6 +13,7 @@ public class TrocaCenaMenu : MonoBehaviour
 
     public bool CarregouTudo;
 
+
     [BankRef]
     public List<string> banks;
 
@@ -47,7 +48,6 @@ public class TrocaCenaMenu : MonoBehaviour
 
         CarregouTudo = true;
     }
-
 
     private void Update()
     {
