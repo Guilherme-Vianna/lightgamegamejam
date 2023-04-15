@@ -18659,7 +18659,7 @@ MonoBehaviour:
   LightDetector: {fileID: 0}
   IsReadyToChase: 0
   ChaseRefreshTime: 2.5
-  ChaseCounter: 0
+  ChaseCounter: -0.5
   CanChase: 0
   SoundChaseCount: 0
   DidTheSound: 0
@@ -18990,7 +18990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670726249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.140675, y: 10.151332, z: -8.858248}
+  m_LocalPosition: {x: -18.140682, y: 10.151333, z: -8.858248}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26827,8 +26827,8 @@ MonoBehaviour:
   SoundChaseCount: 0
   DidTheSound: 0
   colisor: {fileID: 0}
-  AvancoForaTela: 85
-  AvancoDentroTela: 50
+  AvancoForaTela: 90
+  AvancoDentroTela: 60
   IsFliped: 0
 --- !u!114 &1611711144
 MonoBehaviour:
