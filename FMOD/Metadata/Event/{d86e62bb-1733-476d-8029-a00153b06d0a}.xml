@@ -1138,9 +1138,6 @@
 		<property name="length">
 			<value>104</value>
 		</property>
-		<property name="quantizationInterval">
-			<value>1</value>
-		</property>
 		<relationship name="timeline">
 			<destination>{115c1fe9-aba3-4ad8-aa45-3a91a4fc0da7}</destination>
 		</relationship>
