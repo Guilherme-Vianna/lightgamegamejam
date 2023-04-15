@@ -11,18 +11,22 @@ public class Battery : MonoBehaviour
     public float batteryTimeScale;
 
 
+    private void Awake()
+    {
+        soundControl = GameObject.FindAnyObjectByType<SoundController>();        
+    }
     private void Start()
     {
-        soundControl = GameObject.FindAnyObjectByType<SoundController>();
+        soundControl.SetDanger(1);
     }
 
     private void Update()
     {        
         flashLightBattery.fillAmount -= (Time.deltaTime / batteryTimeScale) * 0.5f;
 
-        if (flashLightBattery.fillAmount <= 0.85f)
+        if (flashLightBattery.fillAmount <= 0.8f)
             soundControl.SetDanger(1);
-        if (flashLightBattery.fillAmount <= 0.65f)
+        if (flashLightBattery.fillAmount <= 0.4f)
             soundControl.SetDanger(2);
         else
             soundControl.SetDanger(0);
