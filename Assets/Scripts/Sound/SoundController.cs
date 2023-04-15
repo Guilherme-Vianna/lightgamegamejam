@@ -5,11 +5,19 @@ using UnityEngine;
 public class SoundController : MonoBehaviour
 {
     FMODUnity.StudioEventEmitter emitter;
+    public float Danger;
+
+    FMODUnity.StudioEventEmitter target;
 
     void Start()
     {
-        var target = GetComponent<FMODUnity.StudioEventEmitter>();
+        target = GetComponent<FMODUnity.StudioEventEmitter>();
         emitter = target.GetComponent<FMODUnity.StudioEventEmitter>();
+    }
+
+    private void Update()
+    { 
+        target.EventInstance.getParameterByName("Danger", out Danger);
     }
 
     public void DoStep()
