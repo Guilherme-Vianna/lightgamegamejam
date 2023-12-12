@@ -1,0 +1,1 @@
+A game taking place over a weekend to compete with a game jam. The theme of the game jam was light and we thought it would be a good idea to feature a guard who uses light to defend himself from enemies.
